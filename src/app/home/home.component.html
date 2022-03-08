@@ -1,0 +1,60 @@
+<div class="home">
+    <nav ngbNav #nav="ngbNav" class="nav-tabs">
+        <ng-container ngbNavItem>
+            <a ngbNavLink>Computing</a>
+            <ng-template ngbNavContent>
+                <app-article-liste></app-article-liste>
+            </ng-template>
+        </ng-container>
+        <ng-container ngbNavItem>
+            <a ngbNavLink>Phones & Tablets</a>
+            <ng-template ngbNavContent>
+                <app-article2></app-article2>
+            </ng-template>
+        </ng-container>
+        <ng-container ngbNavItem>
+            <a ngbNavLink>Fashion</a>
+            <ng-template ngbNavContent>
+                <app-article3></app-article3>
+            </ng-template>
+        </ng-container>
+        <ng-container ngbNavItem>
+            <a ngbNavLink>Home & Office </a>
+            <ng-template ngbNavContent>
+                <app-office></app-office>
+            </ng-template>
+            <ng-container ngbNavItem>
+                <a ngbNavLink>Books & Movies</a>
+                <ng-template ngbNavContent>
+                    <app-books></app-books>
+                </ng-template>
+            </ng-container>
+            <ng-container ngbNavItem>
+                <a ngbNavLink>Musical Instruments </a>
+                <ng-template ngbNavContent>
+                    <app-music></app-music>
+                </ng-template>
+            </ng-container>
+            <ng-container ngbNavItem>
+                <a ngbNavLink>Health & Beauty </a>
+                <ng-template ngbNavContent>
+                    <app-health></app-health>
+                </ng-template>
+            </ng-container>
+            <ng-container ngbNavItem>
+                <a ngbNavLink>Baby Products </a>
+                <ng-template ngbNavContent>
+                    <app-baby></app-baby>
+                </ng-template>
+                <ng-container ngbNavItem>
+                    <a ngbNavLink>Supermarket </a>
+                    <ng-template ngbNavContent>
+                        <app-market></app-market>
+                    </ng-template>
+                </ng-container>
+            </ng-container>
+        </ng-container>
+    </nav>
+
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
